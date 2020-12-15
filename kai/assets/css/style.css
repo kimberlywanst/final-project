@@ -845,9 +845,5 @@ article[role="pge-title-content"].contact-header p a:hover {
   border-color: var(--dark-grey);
   border-radius: 5px;
   box-shadow: #a3cef1 10px 12px;
-  margin: 30px 20px;
-}
-
-.blog-details .actionable-steps h5 {
-  /* padding: 10px 0; */
+  margin: 40px 20px;
 }

@@ -840,7 +840,7 @@ article[role="pge-title-content"].contact-header p a:hover {
 }
 
 .blog-details .actionable-steps {
-  padding-left: 40px;
+  padding: 0 40px;
   border: 1px solid #404040;
   border-color: var(--dark-grey);
   border-radius: 5px;

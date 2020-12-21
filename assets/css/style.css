@@ -900,11 +900,18 @@ article[role="pge-title-content"].contact-header p a:hover {
 }
 
 .blog-header h4 {
+  font-family: "Noto Serif", serif;
+  font-style: italic;
+  font-size: 18px;
+  padding-top: 10px;
+}
+
+.blog-header h5 {
   font-size: 18px;
   font-weight: normal;
   text-transform: uppercase;
   color: var(--light-blue);
-  padding-top: 20px;
+  padding-top: 15px;
 }
 
 .blog-details .enter-content {

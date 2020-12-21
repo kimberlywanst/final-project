@@ -86,8 +86,10 @@
 
 .grid figure p {
   letter-spacing: 1px;
+  font-family: "Noto Serif", serif;
   font-size: 16px;
   font-weight: 600;
+  font-style: italic;
   line-height: 22px;
 }
 
@@ -160,6 +162,8 @@ figure.effect-oscar:hover figcaption {
 
 figure.effect-oscar:hover img {
   opacity: 0.4;
+  webkit-filter: blur(4px);
+  filter: blur(4px);
 }
 
 @media screen and (max-width: 50em) {

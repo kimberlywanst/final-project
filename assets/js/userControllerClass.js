@@ -1,25 +1,12 @@
-let userList = [
-    {
-        userName: "Isaac Chong",
-        userPhone: "01234567",
-        userEmail: "isaac@gmail.com",
-        userPassword: "password2"
-    },
-    {
-        userName: "Andy",
-        userPhone: "12345678",
-        userEmail: "andy@gmail.com",
-        userPassword: "password3"
-    },
-    {
-        userName: "Kimberly",
-        userPhone: "87654321",
-        userEmail: "kimberly@gmail.com",
-        userPassword: "password1"
-    }
-]
+let userList = [];
 
 function login() {
+    for (i = 0; i < localStorage.length; i++) {
+        let keyName = window.localStorage.key(i);
+        let localStorageUser = JSON.parse(window.localStorage.getItem(keyName));
+        userList.push(localStorageUser);
+    }
+    
     userEmail = document.getElementById("userEmail").value
     userPassword = document.getElementById("userPassword").value
 
@@ -32,7 +19,7 @@ function login() {
             break
         }
     }
-    if(!valid) {
+    if (!valid) {
         alert("Email or password is invalid")
     }
 }
@@ -56,8 +43,11 @@ function signUp() {
         userPassword: signUpPassword
     }
 
-    userList.push(newUser)
-    console.log(userList)
+    window.localStorage.setItem(newUser.userEmail, JSON.stringify(newUser));
+
+    //In the signup function once all the user fields have been filled, push the data into the localStorage.
+    //For the login function include a way to pull the user info from the localStorage using the key-value pair. To do this use a loop to iterate through the key index that will take all the user info and push it into an array.
+    //Then compare the username and userpassword entered in the input with userName and userPassword included in the value pulled from the localStorage. To do this use another loop to iterate through the array containing the user info pulled from the localStorage.
 }
 
 

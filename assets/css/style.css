@@ -33,11 +33,7 @@ button, html input[type="button"],/* 1 */ input[type="reset"], input[type="submi
 }
 
 body,
-img,
-.commentys-form input[type="text"],
-.commentys-form input[type="email"],
-.commentys-form input[type="url"],
-.commentys-form textarea {
+img {
   transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
@@ -694,41 +690,115 @@ PROFILE PAGE
 ==========================================================================================
 */
 
-main[role="main-inner-wrapper"] .user-profile {
+section.user-profile {
   display: flex;
-  margin-bottom: 80px;
+  margin: 80px 0;
+  padding: 60px;
+  border: 1px solid #404040;
+  border-color: var(--dark-grey);
+  border-radius: 5px;
+  box-shadow: #a3cef1 10px 12px;
 }
 
-main[role="main-inner-wrapper"] .user-profile .profile-image {
-  margin-right: 30px;
+section.user-profile .profile-image {
+  margin-right: 60px;
 }
 
-main[role="main-inner-wrapper"] .user-profile .profile-image img {
+section.user-profile .profile-image img {
   width: 200px;
 }
 
-main[role="main-inner-wrapper"] .user-profile .profile-info {
+section.user-profile .profile-info {
   display: flex;
   flex-direction: column;
 }
 
-main[role="main-inner-wrapper"] .user-profile .profile-social {
+section.user-profile .profile-info h3 {
+  font-family: "Noto Serif", serif;
+  font-size: 35px;
+}
+
+section.user-profile .profile-social {
   display: flex;
   align-items: center;
 }
 
-main[role="main-inner-wrapper"] .user-profile .profile-social p {
+section.user-profile .profile-social p {
   padding-right: 15px;
 }
 
-main[role="main-inner-wrapper"] .user-profile .profile-social button {
+section.user-profile button {
   background: var(--light-blue);
-  border: 2px solid var(--light-blue);
+  border: none;
   border-radius: 5px;
   color: #fff;
   font-weight: 600;
-  padding: 5px 10px;
-  margin-left: 40px;
+  letter-spacing: 1px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 80px;
+}
+
+section.user-profile button:hover {
+  background: #8ab5d8;
+  transition: 0.2s all ease-in-out;
+}
+
+section.user-articles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section.user-articles h2 {
+  font-family: "Noto Serif", serif;
+  padding-bottom: 20px;
+}
+
+section.user-articles article {
+  margin-bottom: 70px;
+}
+
+section.user-articles article img {
+  position: relative;
+}
+
+section.user-articles .post-date {
+  text-align: center;
+  color: var(--light-grey);
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  display: block;
+  background-color: var(--light-blue);
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 41px;
+  z-index: 50;
+}
+
+section.user-articles .post-date span {
+  font-size: 50px;
+  line-height: 35px;
+  display: block;
+  padding-bottom: 5px;
+}
+
+section.user-articles p {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+section.user-articles a {
+  text-decoration: none;
+  font-size: 16px;
 }
 
 /*===== Stories ====*/

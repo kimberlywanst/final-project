@@ -33,11 +33,7 @@ button, html input[type="button"],/* 1 */ input[type="reset"], input[type="submi
 }
 
 body,
-img,
-.commentys-form input[type="text"],
-.commentys-form input[type="email"],
-.commentys-form input[type="url"],
-.commentys-form textarea {
+img {
   transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
@@ -196,7 +192,11 @@ button:focus,
   font-family: "Open Sans", sans-serif;
 }
 
-/*===== Header ====*/
+/*
+==========================================================================================
+HEADER
+==========================================================================================
+*/
 
 header[role="header"] div {
   display: flex;
@@ -343,7 +343,11 @@ header[role="header"] nav #menu-button.open span:nth-child(3) {
   transform: rotate(-135deg);
 }
 
-/*===== main ====*/
+/*
+==========================================================================================
+MAIN - INDEX
+==========================================================================================
+*/
 
 main[role="main-home-wrapper"] {
   padding-bottom: 90px;
@@ -402,7 +406,11 @@ main[role="main-inner-wrapper"] article[role="pge-title-content"] .quote-name {
   font-size: 16px;
 }
 
-/*===== footer ====*/
+/*
+==========================================================================================
+FOOTER
+==========================================================================================
+*/
 
 footer[role="footer"] {
   background-color: #fff;
@@ -481,7 +489,11 @@ footer[role="footer"] .copy-right {
   color: #9c9c9c;
 }
 
-/*===== About ====*/
+/*
+==========================================================================================
+ABOUT PAGE
+==========================================================================================
+*/
 
 main[role="main-inner-wrapper"] .about-content {
   background-color: var(--light-blue);
@@ -672,6 +684,123 @@ main[role="main-inner-wrapper"]
   color: var(--light-blue);
 }
 
+/*
+==========================================================================================
+PROFILE PAGE
+==========================================================================================
+*/
+
+section.user-profile {
+  display: flex;
+  margin: 80px 0;
+  padding: 60px;
+  border: 1px solid #404040;
+  border-color: var(--dark-grey);
+  border-radius: 5px;
+  box-shadow: #a3cef1 10px 12px;
+}
+
+section.user-profile .profile-image {
+  margin-right: 60px;
+}
+
+section.user-profile .profile-image img {
+  width: 200px;
+}
+
+section.user-profile .profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+section.user-profile .profile-info h3 {
+  font-family: "Noto Serif", serif;
+  font-size: 35px;
+}
+
+section.user-profile .profile-social {
+  display: flex;
+  align-items: center;
+}
+
+section.user-profile .profile-social p {
+  padding-right: 15px;
+}
+
+section.user-profile button {
+  background: var(--light-blue);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 80px;
+}
+
+section.user-profile button:hover {
+  background: #8ab5d8;
+  transition: 0.2s all ease-in-out;
+}
+
+section.user-articles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section.user-articles h2 {
+  font-family: "Noto Serif", serif;
+  padding-bottom: 20px;
+}
+
+section.user-articles article {
+  margin-bottom: 70px;
+}
+
+section.user-articles article img {
+  position: relative;
+}
+
+section.user-articles .post-date {
+  text-align: center;
+  color: var(--light-grey);
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  display: block;
+  background-color: var(--light-blue);
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 41px;
+  z-index: 50;
+}
+
+section.user-articles .post-date span {
+  font-size: 50px;
+  line-height: 35px;
+  display: block;
+  padding-bottom: 5px;
+}
+
+section.user-articles p {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+section.user-articles a {
+  text-decoration: none;
+  font-size: 16px;
+}
+
 /*===== Stories ====*/
 
 article[role="pge-title-content"].stories-header {
@@ -735,7 +864,11 @@ section.blog-content:hover figure img {
   opacity: 0.7;
 }
 
-/*===== Contact ====*/
+/*
+==========================================================================================
+CONTACT PAGE
+==========================================================================================
+*/
 
 article[role="pge-title-content"].contact-header {
   padding-bottom: 218px;
@@ -841,63 +974,11 @@ article[role="pge-title-content"].contact-header p a:hover {
   background-color: #f8524e;
 }
 
-/*== Work Details ==*/
-
-.work-details,
-.blog-details {
-  padding: 0 69px;
-  margin-top: 73px;
-}
-
-.work-details header h2 {
-  color: #343434;
-  font-size: 36px;
-  font-weight: 800;
-}
-
-.work-details header a {
-  display: inline-block;
-  color: var(--light-blue);
-  font-size: 18px;
-  font-weight: 800;
-  padding-top: 3px;
-}
-
-.work-details header a i {
-  color: #0d0d0d;
-  padding-left: 10px;
-}
-
-.work-details header a:hover {
-  color: #0d0d0d;
-  text-decoration: none;
-}
-
-.work-details header a:hover i {
-  color: var(--light-blue);
-}
-
-.work-details p {
-  font-size: 16px;
-  color: #666666;
-  line-height: 30px;
-  margin-bottom: 20px;
-  font-weight: 300;
-}
-
-.work-details p strong {
-  font-weight: 800;
-}
-
-.work-images {
-  margin-top: 46px;
-}
-
-.work-images li {
-  margin-bottom: 50px;
-}
-
-/*== Articles ==*/
+/*
+==========================================================================================
+ARTICLES
+==========================================================================================
+*/
 
 .blog-header {
   padding-bottom: 62px;
@@ -972,4 +1053,60 @@ article[role="pge-title-content"].contact-header p a:hover {
   border-radius: 5px;
   box-shadow: #a3cef1 10px 12px;
   margin: 40px 20px;
+}
+
+/*== Work Details ==*/
+
+.work-details,
+.blog-details {
+  padding: 0 69px;
+  margin-top: 73px;
+}
+
+.work-details header h2 {
+  color: #343434;
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.work-details header a {
+  display: inline-block;
+  color: var(--light-blue);
+  font-size: 18px;
+  font-weight: 800;
+  padding-top: 3px;
+}
+
+.work-details header a i {
+  color: #0d0d0d;
+  padding-left: 10px;
+}
+
+.work-details header a:hover {
+  color: #0d0d0d;
+  text-decoration: none;
+}
+
+.work-details header a:hover i {
+  color: var(--light-blue);
+}
+
+.work-details p {
+  font-size: 16px;
+  color: #666666;
+  line-height: 30px;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+
+.work-details p strong {
+  font-weight: 800;
+}
+
+.work-images {
+  margin-top: 46px;
+}
+
+.work-images li {
+  margin-bottom: 50px;
 }

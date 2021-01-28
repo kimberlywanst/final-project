@@ -88,22 +88,22 @@
                 <h4 class="modal-title">Sign Up</h4>
               </div>
               <div class="modal-body">
-                <form>
-                  <label for="name" style="display: block;">Full name</label>
-                  <input type="text" placeholder="Enter full name" name="name" id="signUpName" required />
-
-                  <label for="phone" style="display: block;">Phone Number</label>
-                  <input type="number" placeholder="Enter phone number" name="phone" id="signUpPhone" required />
-
+                <form action="http://localhost:8080/demo/add" method="POST">
+                  <label for="name" style="display: block;">First name</label>
+                  <input type="text" placeholder="Enter first name" name="firstName" id="firstName" required />
+              
+                  <label for="name" style="display: block;">Last name</label>
+                  <input type="text" placeholder="Enter last name" name="lastName" id="lastName" required />
+              
                   <label for="email" style="display: block;">Email</label>
-                  <input type="email" placeholder="Enter email" name="email" id="signUpEmail" required />
-
+                  <input type="email" placeholder="Enter email" name="email" id="email" required />
+              
                   <label for="password" style="display: block;">Password</label>
-                  <input type="text" placeholder="Enter password" name="password" id="signUpPassword" required />
+                  <input type="text" placeholder="Enter password" name="password" id="password" required />
                   <br>
                   <br>
-
-                  <button onclick="signUp()" type="button" class="btn btn-info">Submit</button>
+              
+                  <input type="submit" value="Submit">
                 </form>
               </div>
 

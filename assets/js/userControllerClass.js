@@ -1,4 +1,4 @@
-let userList = [];
+/* let userList = [];
 
 function login() {
     for (i = 0; i < localStorage.length; i++) {
@@ -53,6 +53,6 @@ function signUp() {
         document.getElementById("signUpPassword").value = "";
         alert("Signup successful!");
     }
-}
+} 
 
 

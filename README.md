@@ -1,4 +1,4 @@
-![KAI logo](assets/images/kai-logo-small.png)
+![KAI logo](src/main/resources/static/assets/images/kai-logo-small.png)
 
 KAI means sea in Hawaiian, Japanese and Native American. Started in 2020 by three young programmers to make their mark in the workplace and individual lives.
 

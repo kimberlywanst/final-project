@@ -1,0 +1,16 @@
+com/example/accessingdatamysql/PostRepository.java
+ com.example.accessingdatamysql.PostRepository
+com/example/accessingdatamysql/service/UserService.java
+ com.example.accessingdatamysql.service.UserService
+com/example/accessingdatamysql/AccessingDataMysqlApplication.java
+ com.example.accessingdatamysql.AccessingDataMysqlApplication
+com/example/accessingdatamysql/UserRepository.java
+ com.example.accessingdatamysql.UserRepository
+com/example/accessingdatamysql/model/User.java
+ com.example.accessingdatamysql.model.User
+com/example/accessingdatamysql/controllers/UserController.java
+ com.example.accessingdatamysql.controllers.UserController
+com/example/accessingdatamysql/model/Post.java
+ com.example.accessingdatamysql.model.Post
+com/example/accessingdatamysql/controllers/PostController.java
+ com.example.accessingdatamysql.controllers.PostController

@@ -9,7 +9,7 @@
         <module name="accessing-data-mysql" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="11">
       <module name="accessing-data-mysql" target="7" />
     </bytecodeTargetLevel>
   </component>
